@@ -1,0 +1,18 @@
+{
+  "name": "pd3-scenario-runner",
+  "version": "0.1.0",
+  "private": true,
+  "description": "First-party scenario runner for the Project Diablo 3 realm prototype",
+  "type": "module",
+  "license": "MIT",
+  "author": { "name": "David Gibb (celbii)", "url": "https://github.com/DarkCelbii" },
+  "repository": { "type": "git", "url": "git+https://github.com/DarkCelbii/pd3-scenario-runner.git" },
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "project-diablo-3": "git+https://github.com/DarkCelbii/project-diablo-3.git#ad090efbed935dea0d7636b69405d6311a4c46bf"
+  }
+}

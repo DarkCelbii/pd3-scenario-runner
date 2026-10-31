@@ -1,0 +1,13 @@
+{
+  "name": "Local character creation and access checks",
+  "steps": [
+    { "label": "Service responds", "path": "/health", "expectStatus": 200 },
+    { "label": "Realm can be discovered", "path": "/api/realm", "expectStatus": 200 },
+    { "label": "New realm is empty", "path": "/api/characters", "expectStatus": 200, "expectCharacterCount": 0 },
+    { "label": "Anonymous access is denied", "path": "/api/characters", "authenticated": false, "expectStatus": 401 },
+    { "label": "Create a character", "method": "POST", "path": "/api/characters", "body": { "name": "Aidan", "class": "wizard" }, "expectStatus": 201 },
+    { "label": "Duplicate names are rejected", "method": "POST", "path": "/api/characters", "body": { "name": "aidan", "class": "monk" }, "expectStatus": 409 },
+    { "label": "Invalid classes are rejected", "method": "POST", "path": "/api/characters", "body": { "name": "OtherHero", "class": "unknown" }, "expectStatus": 400 },
+    { "label": "Only one character was stored", "path": "/api/characters", "expectStatus": 200, "expectCharacterCount": 1 }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "name": "Intentional expectation mismatch",
+  "steps": [{ "path": "/health", "expectStatus": 201 }]
+}
