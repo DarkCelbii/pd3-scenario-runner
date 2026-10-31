@@ -1,6 +1,6 @@
 # Security
 
-**David Gibb (celbii / [DarkCelbii](https://github.com/DarkCelbii))** is the
+**[David Gibb](https://github.com/DarkCelbii)** is the
 creator and security maintainer of this first-party development tool.
 
 Each run uses an isolated Project Diablo 3 server bound to `127.0.0.1` on an

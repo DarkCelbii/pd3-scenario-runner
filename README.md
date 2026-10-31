@@ -1,7 +1,7 @@
 # PD3 Scenario Runner
 
 A development tool for testing the Project Diablo 3 realm API. Maintained by
-**David Gibb (celbii / [DarkCelbii](https://github.com/DarkCelbii))**.
+**[David Gibb](https://github.com/DarkCelbii)**.
 
 The runner installs [Project Diablo 3](https://github.com/DarkCelbii/project-diablo-3)
 as a real Git dependency, imports its `createRealmServer` function and starts a

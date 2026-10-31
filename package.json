@@ -5,7 +5,7 @@
   "description": "First-party scenario runner for the Project Diablo 3 realm prototype",
   "type": "module",
   "license": "MIT",
-  "author": { "name": "David Gibb (celbii)", "url": "https://github.com/DarkCelbii" },
+  "author": { "name": "David Gibb", "url": "https://github.com/DarkCelbii" },
   "repository": { "type": "git", "url": "git+https://github.com/DarkCelbii/pd3-scenario-runner.git" },
   "engines": { "node": ">=24" },
   "scripts": {
